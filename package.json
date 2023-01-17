@@ -1,0 +1,17 @@
+{
+  "name": "baryon-swap-subgraph",
+  "description": "Baryon Swap Subgraph",
+  "version": "1.0.0",
+  "repository": "git@github.com:peara/baryon-swap-subgraph.git",
+  "author": "peara",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "codegen": "graph codegen subgraph.yaml",
+    "build": "graph build subgraph.yaml",
+    "deploy": "graph deploy --product hosted-service --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ peara/baryon-trade-aura subgraph.yaml"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "^0.21.0",
+    "@graphprotocol/graph-ts": "^0.20.0"
+  }
+}
